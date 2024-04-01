@@ -1,0 +1,15 @@
+// {type:class}
+// {direction:topDown}
+
+// Class (and optional details)
+[BounderCounter]
+[ListCounter]
+[Clock12]
+
+// Relationships (A has_a B = [A]++-[B], A is_a B = [B]^[A])
+// <> is aggregation, ++ is composition
+// ++- means has a
+[Clock12]++-[BounderCounter]
+[Clock12]++-[ListCounter]
+// [ListCounter]++-[BounderCounter]
+[BounderCounter]^[ListCounter]
